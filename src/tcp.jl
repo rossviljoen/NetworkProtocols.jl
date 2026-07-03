@@ -9,6 +9,7 @@ struct TCPHeader
     checksum::UInt16
     urgent_pointer::UInt16
 end
+@assert sizeof(TCPHeader) == 20
 
 const FIN_MASK = 0x01
 const SYN_MASK = 0x01 << 1
