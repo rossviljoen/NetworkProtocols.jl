@@ -13,6 +13,7 @@ struct EthernetHeader
     src_mac::MACAddress
     ethertype::UInt16
 end
+@assert sizeof(EthernetHeader) == 14
 
 function Base.show(io::IO, x::EthernetHeader)
     print(io, "($(x.src_mac) -> $(x.dst_mac) $(ethertype_string(x.ethertype)))")

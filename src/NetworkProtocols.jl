@@ -19,6 +19,10 @@ export TCPHeader, TCPPacket
 export UDPHeader, UDPPacket
 export decode_tcp, decode_udp
 
+export IGMPv2Packet
+export IGMP_MEMBERSHIP_QUERY, IGMP_V1_MEMBERSHIP_REPORT, IGMP_V2_MEMBERSHIP_REPORT, IGMP_V3_MEMBERSHIP_REPORT, IGMP_LEAVE_GROUP
+export decode_igmpv2
+
 export dispatch_ethernet
 
 include("mac_address.jl")
@@ -26,6 +30,7 @@ include("ethernet.jl")
 include("ip.jl")
 include("tcp.jl")
 include("udp.jl")
+include("igmp.jl")
 include("dispatch.jl")
 
 module Experimental

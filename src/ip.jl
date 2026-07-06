@@ -10,6 +10,7 @@ struct IPv4HeaderRaw
     src_ip::UInt32
     dst_ip::UInt32
 end
+@assert sizeof(IPv4HeaderRaw) == 20
 
 const IPPROTOCOL_IGMP = UInt8(0x02)
 const IPPROTOCOL_TCP = UInt8(0x06)

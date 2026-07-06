@@ -4,6 +4,7 @@ struct UDPHeader
     length::UInt16
     checksum::UInt16
 end
+@assert sizeof(UDPHeader) == 8
 
 struct UDPPacket
     header::UDPHeader
