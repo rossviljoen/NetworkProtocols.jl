@@ -9,5 +9,6 @@ include("test_data.jl")
     include("ethernet_tests.jl")
     include("ip_tests.jl")
     include("udp_tests.jl")
+    include("igmp_tests.jl")
     include("dispatch_tests.jl")
 end
